@@ -357,3 +357,8 @@ fabric.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm
 .idea/misc.xml
+.idea/Group Website.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/material_theme_project_new.xml
+.idea/modules.xml
+.idea/vcs.xml
