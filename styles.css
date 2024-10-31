@@ -128,3 +128,15 @@ button:hover {
     max-width: 100%;
     height: auto;
 }
+
+.Tracey {
+    background: green;
+}
+
+.Tracey-button {
+    background: black;
+}
+
+#bio1 {
+    color: black;
+}
