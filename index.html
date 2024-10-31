@@ -11,6 +11,12 @@
 
 <header>
     <h1>The Data Pirates</h1>
+    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
 </header>
 
 <div class="container">
@@ -20,12 +26,13 @@
         <button onclick="toggleBio('bio1')">Show Bio</button>
         <p id="bio1" class="bio"><img src="img/blahaj.jpg" alt="shark" height="50px" width="50px"><br>Tracey is a skilled computer science student. They enjoy playing video games and programming.</p>
     </div>
-    <div class="card">
-        <img src="img/250x250.png">
+    <div class="card donovan-profile">
         <h2>Donovan Andreu</h2>
-        <p>Backend Developer</p>
+        <p>UI Design & Frontend Dev</p>
         <button onclick="toggleBio('bio2')">View Moodboard</button>
-        <p id="bio2" class="bio">Donovan likes frontend development and design. He uses tools such as <a href="https://www.figma.com">Figma</a> to design UI and
+        <p id="bio2" class="bio">
+            <img src="img/donovanprofileimage.png" alt="Cool child posing for the camera">
+            <br>Donovan likes frontend development and design. He uses tools such as <a href="https://www.figma.com">Figma</a> to design UI and
             then translate this into frontend HTML & CSS</p>
     </div>
     <div class="allie-profile">
@@ -37,8 +44,8 @@
     <div class="card">
         <h2>Emily Johnson</h2>
         <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        <button onclick="toggleBio('bio4')">Show Bio</button>
+        <p id="bio4" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
     </div>
 </div>
 
