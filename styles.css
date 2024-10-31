@@ -1,3 +1,4 @@
+/*Global Styles*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -11,7 +12,7 @@ header {
     text-align: center;
 }
 
-
+/*Class Styles*/
 .container {
     width: 80%;
     margin: 20px auto;
@@ -52,6 +53,8 @@ button:hover {
     background: #0056b3;
 }
 
+
+/*Allie Specific styles*/
 .allie-profile {
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     border-radius: 8px;
@@ -127,4 +130,24 @@ button:hover {
     border-radius: 50%;
     max-width: 100%;
     height: auto;
+}
+
+/*Donovan Specific Styles*/
+.donovan-profile{
+
+}
+.donovan-profile img {
+    height: auto;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.donovan-profile button {
+    color: black;
+    background-color: #ffb23b;
+}
+.donovan-profile button:hover {
+
+}
+.donovan-profile .bio {
+
 }
