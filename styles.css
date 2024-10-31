@@ -186,3 +186,15 @@ button:hover {
 .donovan-profile .bio {
 
 }
+/*Tracey Specific Styles*/
+.Tracey {
+    background: green;
+}
+
+.Tracey-button {
+    background: black;
+}
+
+#bio1 {
+    color: black;
+}
