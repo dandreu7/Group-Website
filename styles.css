@@ -169,12 +169,13 @@ button:hover {
 
 /*Donovan Specific Styles*/
 .donovan-profile{
-
+    background-color: #B084CC;
 }
 .donovan-profile img {
     height: auto;
     width: 100px;
     margin-bottom: 10px;
+    border: 3px solid #729EA1;
 }
 .donovan-profile button {
     font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
@@ -187,15 +188,23 @@ button:hover {
     border: 1px solid #000000;
     box-shadow: #000000 4px 4px 0px 0px;
 }
-
 .donovan-profile button:hover {
+    font-size: medium;
+}
+.donovan-profile button:active{
     left: 4px;
     top: 4px;
     box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
 }
 
 .donovan-profile .bio {
-
+    font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #C8FFBE;
+    border-radius: 12px;
+    border: #729EA1 dashed;
 }
 /*Tracey Specific Styles*/
 .Tracey {
