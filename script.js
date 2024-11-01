@@ -31,3 +31,26 @@ function showSection(sectionId) {
         visionSection.style.display = "block";
     }
 }
+
+/**
+ * Play a sound when your bio button is pressed and the bio opens
+ * @param {string} audio - path to the sound file to be played
+ * @param {string} bioId - the ID of the bio section to check
+ **/
+function playSound(audio, bioId) {
+    const sound = document.getElementById("sound");
+    const bio = document.getElementById(bioId);
+
+    // Play sound only if the bio is currently hidden and is being unhidden
+    if (bio && (bio.style.display === "block")) {
+        if (sound) {
+            // Set the source to the provided audio path
+            sound.src = audio;
+            // Play audio
+            sound.play();
+        } else {
+            console.error("Audio not found.");
+        }
+    }
+}
+
