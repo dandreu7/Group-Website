@@ -1,17 +1,18 @@
 /* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e4e2dd;
     margin: 0;
     padding: 0;
 }
 
 /* Header section styling */
 header {
-    background: #333;
-    color: #fff;
+    background: #e4e2dd
+    color: #000000;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for team logo image */
@@ -26,13 +27,20 @@ header nav {
 }
 
 header nav button {
-    background: #007BFF;
+    background: #000000;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     margin: 0 5px;
+}
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
 }
 
 header nav button:hover {
@@ -44,7 +52,7 @@ header nav button:hover {
     width: 80%;
     margin: 20px auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -217,4 +225,58 @@ button:hover {
 
 #bio1 {
     color: black;
+}
+/* realignment of blocks */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.profile-box {
+    width: 45%;
+    margin: 10px;
+}
+
+/* destinee styling */
+.destinee-profile {
+    background-image: linear-gradient(#f1f1f1, #c7d5e6);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+    padding: 20px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    color: #4A4A4A;
+}
+.destinee-profile h2 {
+    font-weight: 600;
+    color: #1f78b4;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.destinee-profile button {
+    background: linear-gradient(to right, #4591c4, #1f78b4); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.destinee-profile p {
+    color: #2d5c8a; 
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.destinee-profile img {
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border: 2px solid #1f78b4;
 }

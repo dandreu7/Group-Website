@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-    <title>Team Bio</title>
+    <title>Home</title>
 </head>
 <body>
 
 <header>
     <h1>The Data Pirates</h1>
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <img src="img/logo.png" alt="Team Logo" class="team-logo">
     <!-- Navigation menu to switch between sections -->
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
@@ -38,18 +38,19 @@
             <br>Donovan likes frontend development and design. He uses tools such as <a href="https://www.figma.com">Figma</a> to design UI and
             then translate this into frontend HTML & CSS</p>
     </div>
-    <div class="allie-profile">
+
+    <div class="card allie-profile">
         <h2>Allie Costner</h2>
-        <p>Computer Science Student</p>
+        <p>Full Stack Developer</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
         <p id="bio3" class="bio"><img src="img/swan.png" alt="swan" height="50px" width="50px"> <br>Allie is an enthusiastic computer science student, wanting to become a Software Engineer.</p>
     </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
+    <div class="card destinee-profile">
+        <h2>Destinee Brewer</h2>
+        <p>Full Stack Developer</p>
         <button onclick="toggleBio('bio4')">Show Bio</button>
-        <p id="bio4" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-    </div>
+        <p id="bio4" class="bio"><img src="img/des.jpg" alt="anime character" height="50px" width="50px"> <br>Destinee enjoys all aspects of development. Her favorite thing to work with is APIs.</p>
+</div>
 </div>
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
