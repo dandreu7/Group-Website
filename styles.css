@@ -1,190 +1,149 @@
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e4e2dd;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 /* Header section styling */
 header {
-    background: #e4e2dd
-    color: #000000;
-    padding: 10px 0;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 /* Styling for team logo image */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
-    margin-top: 10px;
+    width: 180px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
 }
 
 /* Menu button styling */
 header nav {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 header nav button {
-    background: #000000;
+    background: rgba(255,255,255,0.2);
     color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    border: 2px solid white;
+    padding: 12px 20px;
+    border-radius: 25px;
     cursor: pointer;
-    margin: 0 5px;
-}
-header h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #000000;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 header nav button:hover {
-    background: #0056b3;
+    background: white;
+    color: #2c3e50;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* Flex container for team bios and vision sections */
 .container {
-    width: 80%;
-    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 /* Card styling for individual team bios */
 .card {
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    flex: 1 1 calc(30% - 40px);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 1 1 calc(50% - 30px);
+    max-width: 400px;
     text-align: center;
-    transition: transform 0.2s;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-    margin: 0 0 10px;
-}
-
-/* Initially hide bio details */
-.bio {
-    display: none;
-    margin-top: 10px;
-    color: #555;
+.card h2 {
+    margin: 0 0 15px;
+    color: #2c3e50;
+    font-size: 28px;
 }
 
 /* Button styling */
 button {
-    background: #007BFF;
+    background: #3498db;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 12px 25px;
+    border-radius: 25px;
     cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #2980b9;
+    transform: scale(1.05);
 }
 
-/*Allie Specific styles*/
+/* Bio styling */
+.bio {
+    display: none;
+    margin-top: 20px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.bio img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 3px solid #3498db;
+}
+
+/* Allie's style */
 .allie-profile {
-    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 10px;
-    padding: 20px;
-    flex: 1 1 calc(30% - 40px);
-    text-align: center;
-    transition: transform 0.2s;
-    font-family: 'Arial', sans-serif;
-}
-
-.allie-profile:hover {
-    transform: translateY(-5px);
+    background-image: linear-gradient(to bottom right, #fdcbf1, #e6dee9);
 }
 
 .allie-profile h2 {
     color: #8e44ad;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.allie-profile p {
-    color: #34495e;
-    font-size: 16px;
-    margin-bottom: 15px;
 }
 
 .allie-profile button {
     background-image: linear-gradient(to right, #9b59b6, #8e44ad);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 14px;
-    font-weight: bold;
-    position: relative;
 }
 
-.allie-profile button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 25px;
-    transform: scale(0);
-    transition: transform 0.3s ease;
-}
-
-.allie-profile button:hover::after {
-    transform: scale(1);
-}
-
-.allie-profile button:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.allie-profile .bio {
-    display: none;
-    margin-top: 15px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 8px;
-}
-
-.allie-profile .bio img {
-    margin-bottom: 10px;
-    border-radius: 50%;
-    max-width: 100%;
-    height: auto;
-}
-
-/*Donovan Specific Styles*/
-.donovan-profile{
+/* Donovan's style */
+.donovan-profile {
     background-color: #B084CC;
 }
-.donovan-profile img {
-    height: auto;
-    width: 100px;
-    margin-bottom: 10px;
-    border: 3px solid #729EA1;
-}
+
 .donovan-profile button {
     font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
     color: black;
@@ -196,10 +155,12 @@ button:hover {
     border: 1px solid #000000;
     box-shadow: #000000 4px 4px 0px 0px;
 }
+
 .donovan-profile button:hover {
     font-size: medium;
 }
-.donovan-profile button:active{
+
+.donovan-profile button:active {
     left: 4px;
     top: 4px;
     box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
@@ -208,15 +169,13 @@ button:hover {
 .donovan-profile .bio {
     font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
     color: black;
-    margin-top: 15px;
-    padding: 10px;
     background-color: #C8FFBE;
-    border-radius: 12px;
     border: #729EA1 dashed;
 }
-/*Tracey Specific Styles*/
+
+/* Tracey's style */
 .Tracey {
-    background: green;
+    background: linear-gradient(to bottom right, #2ecc71, #27ae60);
 }
 
 .Tracey-button {
@@ -226,57 +185,53 @@ button:hover {
 #bio1 {
     color: black;
 }
-/* realignment of blocks */
-.profile-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-}
-.profile-box {
-    width: 45%;
-    margin: 10px;
+
+/* Destinee's style */
+.destinee-profile {
+    background-image: linear-gradient(to bottom right, #f1f1f1, #c7d5e6);
 }
 
-/* destinee styling */
-.destinee-profile {
-    background-image: linear-gradient(#f1f1f1, #c7d5e6);
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease;
-    padding: 20px;
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-    color: #4A4A4A;
-}
 .destinee-profile h2 {
-    font-weight: 600;
     color: #1f78b4;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 10px;
 }
 
 .destinee-profile button {
-    background: linear-gradient(to right, #4591c4, #1f78b4); 
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
+    background: linear-gradient(to right, #4591c4, #1f78b4);
 }
 
 .destinee-profile p {
-    color: #2d5c8a; 
-    font-size: 16px;
-    margin-bottom: 15px;
+    color: #2d5c8a;
 }
-.destinee-profile img {
-    border-radius: 50%; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 70px;
-    height: 70px;
-    margin-bottom: 10px;
-    border: 2px solid #1f78b4;
+
+/* Vision section styling */
+#vision {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#vision h2 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#vision p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        flex: 1 1 100%;
+        max-width: none;
+    }
 }
