@@ -144,6 +144,13 @@ button:hover {
     background-color: #B084CC;
 }
 
+.donovan-profile img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
 .donovan-profile button {
     font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
     color: black;
@@ -170,7 +177,12 @@ button:hover {
     font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
     color: black;
     background-color: #C8FFBE;
-    border: #729EA1 dashed;
+    border: 2px #729EA1 solid;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 1px;
 }
 
 /* Tracey's style */
